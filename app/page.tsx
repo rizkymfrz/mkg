@@ -21,9 +21,7 @@ export default function Home() {
       <main>
         <Hero />
         <TrustedBy />
-        <Separator />
         <About />
-        <Separator />
         <Services />
         <Separator />
         <WhyUs />

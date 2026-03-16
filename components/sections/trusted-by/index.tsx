@@ -15,7 +15,7 @@ export function TrustedBy() {
   const plugin = React.useRef(Autoplay({ delay: 3000 }));
 
   return (
-    <section id="dipercaya" className="bg-white py-16 border-b border-border">
+    <section id="dipercaya" className="bg-white py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
         <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
           Dipercaya oleh Berbagai Perusahaan

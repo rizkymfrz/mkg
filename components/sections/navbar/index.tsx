@@ -51,11 +51,7 @@ export function Navbar() {
             alt="PT Mitra Kerja Gemilang Logo"
             className="h-9 w-auto object-contain"
           />
-          <span
-            className={`font-bold text-lg transition-colors duration-300 block ${
-              scrolled ? "text-brand-900" : "text-white"
-            }`}
-          >
+          <span className="font-bold text-lg transition-colors duration-300 block text-brand-900">
             Mitra Kerja Gemilang
           </span>
         </a>
@@ -67,7 +63,7 @@ export function Navbar() {
               className={`rounded-md px-3 py-2 text-sm font-medium transition-colors duration-300 hover:bg-brand-700/10 ${
                 scrolled
                   ? "text-foreground/70 hover:text-foreground"
-                  : "text-white/80 hover:text-white"
+                  : "text-brand-900"
               }`}
             >
               {link.label}
@@ -86,9 +82,7 @@ export function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              className={`lg:hidden ${
-                scrolled ? "text-foreground" : "text-white"
-              }`}
+              className="lg:hidden text-foreground"
             >
               <Menu className="h-5 w-5" />
               <span className="sr-only">Menu</span>

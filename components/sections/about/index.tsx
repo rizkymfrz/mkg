@@ -12,11 +12,20 @@ const highlights = [
 
 export function About() {
   return (
-    <section id="tentang" className="relative overflow-hidden bg-white py-20 lg:py-28">
+    <section
+      id="tentang"
+      className="relative overflow-hidden bg-white py-20 lg:py-28"
+    >
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-20 -right-20 w-[600px] h-[600px] rounded-full bg-brand-100/80 blur-[100px]" />
-        <div className="absolute -bottom-20 -left-20 w-[600px] h-[600px] rounded-full bg-accent-gold/20 blur-[100px]" />
+        <div className="absolute bottom-0 -left-20 w-[600px] h-[500px] rounded-full bg-accent-gold/20 blur-[100px]" />
       </div>
+      
+      {/* Seamless transition from previous section */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-white to-transparent pointer-events-none z-0" />
+      
+      {/* Seamless transition to next section */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-white to-transparent pointer-events-none z-0" />
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           <motion.div
@@ -67,30 +76,25 @@ export function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative overflow-hidden rounded-2xl bg-linear-to-br from-brand-50 to-brand-100 p-8 lg:p-12">
-              <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-brand-200/50 blur-2xl" />
-              <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-accent-gold/20 blur-2xl" />
-
-              <div className="relative space-y-6">
-                <div className="rounded-xl bg-white/80 p-6 backdrop-blur-sm">
-                  <div className="text-3xl font-bold text-brand-700">
-                    Visi Kami
-                  </div>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    Menjadi perusahaan penyedia tenaga kerja terdepan yang
-                    terpercaya dan profesional di Indonesia.
-                  </p>
+            <div className="relative space-y-6">
+              <div className="rounded-xl bg-white p-6 border border-border">
+                <div className="text-3xl font-bold text-brand-700">
+                  Visi Kami
                 </div>
-                <div className="rounded-xl bg-white/80 p-6 backdrop-blur-sm">
-                  <div className="text-3xl font-bold text-accent-gold">
-                    Misi Kami
-                  </div>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    Menyediakan tenaga kerja berkualitas melalui proses seleksi
-                    yang ketat dan pelatihan yang berkesinambungan untuk
-                    mendukung keberhasilan klien.
-                  </p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Menjadi perusahaan penyedia tenaga kerja terdepan yang
+                  terpercaya dan profesional di Indonesia.
+                </p>
+              </div>
+              <div className="rounded-xl bg-white p-6 border border-border">
+                <div className="text-3xl font-bold text-brand-700">
+                  Misi Kami
                 </div>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Menyediakan tenaga kerja berkualitas melalui proses seleksi
+                  yang ketat dan pelatihan yang berkesinambungan untuk mendukung
+                  keberhasilan klien.
+                </p>
               </div>
             </div>
           </motion.div>

@@ -6,10 +6,10 @@ import { ArrowRight, Phone } from "lucide-react";
 
 export function CTA() {
   return (
-    <section className="relative overflow-hidden bg-linear-to-r from-brand-700 via-brand-800 to-brand-900 py-20 lg:py-24">
+    <section className="relative overflow-hidden bg-brand-950 py-20 lg:py-24">
       <div className="absolute inset-0">
-        <div className="absolute -top-20 left-1/4 h-60 w-60 rounded-full bg-white/5 blur-3xl" />
-        <div className="absolute -bottom-20 right-1/4 h-60 w-60 rounded-full bg-accent-gold/10 blur-3xl" />
+        <div className="absolute -top-20 -left-20 h-60 w-60 rounded-full bg-brand-600/20 blur-3xl" />
+        <div className="absolute -bottom-20 -right-20 h-60 w-60 rounded-full bg-accent-gold/10 blur-3xl" />
       </div>
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <motion.div

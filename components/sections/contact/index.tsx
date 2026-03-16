@@ -36,11 +36,15 @@ const contactInfo = [
 
 export function Contact() {
   return (
-    <section id="kontak" className="relative overflow-hidden bg-slate-50 py-20 lg:py-28">
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-20 left-10 w-[500px] h-[500px] bg-brand-200/60 rounded-full blur-[80px]" />
-        <div className="absolute bottom-20 right-10 w-[600px] h-[600px] bg-accent-gold/20 rounded-full blur-[100px]" />
-      </div>
+    <section id="kontak" className="relative overflow-hidden bg-brand-50 py-20 lg:py-28">
+      <div
+        className="absolute inset-0 opacity-[0.08] pointer-events-none"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 1px 1px, #334155 1px, transparent 0)",
+          backgroundSize: "40px 40px",
+        }}
+      />
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

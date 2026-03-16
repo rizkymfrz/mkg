@@ -6,10 +6,7 @@ import { industries } from "@/data/industries";
 export function Industries() {
   return (
     <section id="industri" className="relative overflow-hidden bg-slate-50 py-20 lg:py-28">
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute -top-24 -left-24 w-[500px] h-[500px] rounded-full bg-brand-200/50 blur-[80px]" />
-        <div className="absolute -bottom-24 -right-24 w-[500px] h-[500px] rounded-full bg-brand-200/50 blur-[80px]" />
-      </div>
+      <div className="absolute inset-0 opacity-[0.08] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #334155 1px, transparent 0)', backgroundSize: '40px 40px' }} />
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

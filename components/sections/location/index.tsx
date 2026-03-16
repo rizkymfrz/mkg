@@ -7,8 +7,16 @@ export function Location() {
   return (
     <section
       id="lokasi"
-      className="bg-white py-20 lg:py-28 border-t border-border/50"
+      className="relative overflow-hidden bg-white py-20 lg:py-28 border-t border-border/50"
     >
+      <div
+        className="absolute inset-0 opacity-[0.08] pointer-events-none"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 1px 1px, #334155 1px, transparent 0)",
+          backgroundSize: "40px 40px",
+        }}
+      />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
