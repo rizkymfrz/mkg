@@ -46,9 +46,13 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 md:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="/" className="flex items-center gap-2">
-          <img src="/logo.png" alt="PT Mitra Kerja Gemilang Logo" className="h-9 w-auto object-contain" />
+          <img
+            src="/logo.png"
+            alt="PT Mitra Kerja Gemilang Logo"
+            className="h-9 w-auto object-contain"
+          />
           <span
-            className={`font-bold text-lg transition-colors duration-300 hidden sm:block ${
+            className={`font-bold text-lg transition-colors duration-300 block ${
               scrolled ? "text-brand-900" : "text-white"
             }`}
           >
