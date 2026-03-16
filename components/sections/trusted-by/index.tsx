@@ -2,7 +2,7 @@ import { clients } from "@/data/clients";
 import { Building2 } from "lucide-react";
 
 export function TrustedBy() {
-  const duplicatedClients = [...clients, ...clients];
+  const duplicatedClients = [...clients, ...clients, ...clients];
 
   return (
     <section id="dipercaya" className="bg-white py-16 border-b border-border">
@@ -16,12 +16,13 @@ export function TrustedBy() {
           {duplicatedClients.map((client, i) => (
             <div
               key={`${client.name}-${i}`}
-              className="flex shrink-0 items-center gap-3 rounded-lg border border-border/50 bg-muted/30 px-6 py-3"
+              className="group flex h-24 w-48 shrink-0 items-center justify-center rounded-xl bg-white px-6 py-4 border border-border/50"
             >
-              <Building2 className="h-5 w-5 text-brand-600 shrink-0" />
-              <span className="whitespace-nowrap text-sm font-medium text-foreground/70">
-                {client.name}
-              </span>
+              <img
+                src={client.logo}
+                alt={`Logo ${client.name}`}
+                className="max-h-full max-w-full object-contain transition-all duration-300"
+              />
             </div>
           ))}
         </div>
