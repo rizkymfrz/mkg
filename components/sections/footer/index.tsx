@@ -1,25 +1,25 @@
 import { Separator } from "@/components/ui/separator";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook } from "lucide-react";
 
 const footerLinks = [
   {
     title: "Layanan",
     links: [
-      { label: "Jasa Keamanan", href: "#layanan" },
-      { label: "Dukungan Kantor", href: "#layanan" },
-      { label: "Layanan Rekrutmen", href: "#layanan" },
-      { label: "Pelatihan & Workshop", href: "#layanan" },
-      { label: "Konsultasi HR", href: "#layanan" },
+      { label: "Jasa Keamanan", href: "/#layanan" },
+      { label: "Dukungan Kantor", href: "/#layanan" },
+      { label: "Layanan Rekrutmen", href: "/#layanan" },
+      { label: "Pelatihan & Workshop", href: "/#layanan" },
+      { label: "Konsultasi HR", href: "/#layanan" },
     ],
   },
   {
     title: "Perusahaan",
     links: [
-      { label: "Tentang Kami", href: "#tentang" },
-      { label: "Keunggulan", href: "#keunggulan" },
-      { label: "Industri", href: "#industri" },
-      { label: "Testimoni", href: "#testimoni" },
-      { label: "Hubungi Kami", href: "#kontak" },
+      { label: "Tentang Kami", href: "/#tentang" },
+      { label: "Keunggulan", href: "/#keunggulan" },
+      { label: "Industri", href: "/#industri" },
+      { label: "Testimoni", href: "/#testimoni" },
+      { label: "Hubungi Kami", href: "/#kontak" },
     ],
   },
 ];
@@ -79,14 +79,25 @@ export function Footer() {
           ))}
         </div>
         <Separator className="my-10 bg-white/10" />
-        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
           <p className="text-sm text-white/40">
             &copy; {new Date().getFullYear()} PT Mitra Kerja Gemilang. Semua hak
             dilindungi.
           </p>
-          <p className="text-sm text-white/40">
-            Karawang, Jawa Barat, Indonesia
-          </p>
+          <div className="flex items-center gap-6">
+            <a 
+              href="https://www.facebook.com/mitra.kerja.gemilang.2025?rdid=wgeIUM9vfHIN96n4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CYMSnMeag%2F%23" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/40 hover:text-white transition-colors"
+              aria-label="Facebook PT Mitra Kerja Gemilang"
+            >
+              <Facebook className="h-5 w-5" />
+            </a>
+            <p className="text-sm text-white/40">
+              Karawang, Jawa Barat, Indonesia
+            </p>
+          </div>
         </div>
       </div>
     </footer>

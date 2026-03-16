@@ -28,10 +28,21 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className="mb-8 flex justify-center"
           >
-            <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white/90 backdrop-blur-sm">
-              PT Mitra Kerja Gemilang
-            </span>
+            <div className="inline-flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-3 pr-6 sm:p-4 sm:pr-8 backdrop-blur-md transition-transform hover:scale-105">
+              <img
+                src="/logo.png"
+                alt="Logo PT Mitra Kerja Gemilang"
+                className="h-12 sm:h-16 w-auto object-contain"
+              />
+              <div className="h-10 sm:h-12 w-px bg-white/20" />
+              <span className="text-lg sm:text-xl font-bold tracking-wide text-white">
+                MITRA KERJA
+                <br />
+                GEMILANG
+              </span>
+            </div>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}

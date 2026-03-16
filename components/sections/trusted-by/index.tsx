@@ -1,5 +1,4 @@
 import { clients } from "@/data/clients";
-import { Building2 } from "lucide-react";
 
 export function TrustedBy() {
   const duplicatedClients = [...clients, ...clients, ...clients];
@@ -11,18 +10,23 @@ export function TrustedBy() {
           Dipercaya oleh Berbagai Perusahaan
         </p>
       </div>
-      <div className="mt-8 overflow-hidden">
-        <div className="animate-marquee flex w-max items-center gap-8 px-4">
+      <div className="mt-8 overflow-hidden pb-4">
+        <div className="animate-marquee flex w-max items-stretch gap-6 px-4">
           {duplicatedClients.map((client, i) => (
             <div
               key={`${client.name}-${i}`}
-              className="group flex h-24 w-48 shrink-0 items-center justify-center rounded-xl bg-white px-6 py-4 border border-border/50"
+              className="group flex w-48 shrink-0 flex-col items-center justify-between gap-4 rounded-xl bg-white p-5 border border-border/50"
             >
-              <img
-                src={client.logo}
-                alt={`Logo ${client.name}`}
-                className="max-h-full max-w-full object-contain transition-all duration-300"
-              />
+              <div className="flex flex-1 w-full items-center justify-center">
+                <img
+                  src={client.logo}
+                  alt={`Logo ${client.name}`}
+                  className="max-h-16 max-w-32 object-contain transition-all duration-300"
+                />
+              </div>
+              <span className="w-full text-center text-xs font-semibold text-muted-foreground/80 leading-snug">
+                {client.name}
+              </span>
             </div>
           ))}
         </div>

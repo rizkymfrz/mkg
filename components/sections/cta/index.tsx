@@ -32,7 +32,7 @@ export function CTA() {
               size="lg"
               className="bg-accent-gold hover:bg-accent-gold/90 text-brand-950 font-semibold px-8 h-12 text-base"
             >
-              <a href="#kontak">
+              <a href="/#kontak">
                 Konsultasi Sekarang
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>

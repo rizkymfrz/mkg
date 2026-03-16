@@ -12,13 +12,13 @@ import {
 import { Menu } from "lucide-react";
 
 const navLinks = [
-  { label: "Tentang", href: "#tentang" },
-  { label: "Layanan", href: "#layanan" },
-  { label: "Keunggulan", href: "#keunggulan" },
-  { label: "Industri", href: "#industri" },
-  { label: "Galeri", href: "#galeri" },
-  { label: "Testimoni", href: "#testimoni" },
-  { label: "Kontak", href: "#kontak" },
+  { label: "Tentang", href: "/#tentang" },
+  { label: "Layanan", href: "/#layanan" },
+  { label: "Keunggulan", href: "/#keunggulan" },
+  { label: "Industri", href: "/#industri" },
+  { label: "Galeri", href: "/#galeri" },
+  { label: "Testimoni", href: "/#testimoni" },
+  { label: "Kontak", href: "/#kontak" },
 ];
 
 export function Navbar() {
@@ -45,7 +45,7 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-16 md:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <img src="/logo.png" alt="PT Mitra Kerja Gemilang Logo" className="h-9 w-auto object-contain" />
           <span
             className={`font-bold text-lg transition-colors duration-300 hidden sm:block ${
@@ -74,7 +74,7 @@ export function Navbar() {
             size="lg"
             className="ml-3 bg-brand-600 hover:bg-brand-700 text-white"
           >
-            <a href="#kontak">Hubungi Kami</a>
+            <a href="/#kontak">Hubungi Kami</a>
           </Button>
         </nav>
         <Sheet open={open} onOpenChange={setOpen}>
@@ -109,7 +109,7 @@ export function Navbar() {
                 asChild
                 className="mt-4 bg-brand-600 hover:bg-brand-700 text-white"
               >
-                <a href="#kontak" onClick={() => setOpen(false)}>
+                <a href="/#kontak" onClick={() => setOpen(false)}>
                   Hubungi Kami
                 </a>
               </Button>
