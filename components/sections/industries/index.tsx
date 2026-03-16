@@ -5,8 +5,12 @@ import { industries } from "@/data/industries";
 
 export function Industries() {
   return (
-    <section id="industri" className="bg-muted/30 py-20 lg:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="industri" className="relative overflow-hidden bg-slate-50 py-20 lg:py-28">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-brand-100/40 blur-3xl" />
+        <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-brand-100/40 blur-3xl" />
+      </div>
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

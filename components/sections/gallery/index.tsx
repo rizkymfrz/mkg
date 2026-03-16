@@ -6,8 +6,29 @@ import { galleryData } from "@/data/gallery";
 
 export function Gallery() {
   return (
-    <section id="galeri" className="bg-muted/30 py-20 lg:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section
+      id="galeri"
+      className="relative overflow-hidden bg-slate-50 py-20 lg:py-28"
+    >
+      <div className="absolute inset-0 pointer-events-none opacity-[0.05]">
+        <svg
+          className="absolute inset-0 h-full w-full"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <pattern
+              id="gallery-pattern"
+              width="32"
+              height="32"
+              patternUnits="userSpaceOnUse"
+            >
+              <circle cx="2" cy="2" r="2" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#gallery-pattern)" />
+        </svg>
+      </div>
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -22,10 +43,10 @@ export function Gallery() {
             Dokumentasi Kegiatan
           </h2>
           <p className="mt-4 mx-auto max-w-2xl text-base text-muted-foreground">
-            Momen-momen dedikasi dan profesionalisme tenaga kerja kami di lapangan.
+            Momen-momen dedikasi dan profesionalisme tenaga kerja kami di
+            lapangan.
           </p>
         </motion.div>
-
         <div className="mt-14 grid gap-4 grid-cols-2 md:grid-cols-3">
           {galleryData.map((item, i) => (
             <motion.div

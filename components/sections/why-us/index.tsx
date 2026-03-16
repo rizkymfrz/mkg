@@ -5,8 +5,11 @@ import { advantages } from "@/data/why-us";
 
 export function WhyUs() {
   return (
-    <section id="keunggulan" className="bg-white py-20 lg:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="keunggulan" className="relative overflow-hidden bg-white py-20 lg:py-28">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-brand-50/50 blur-[120px]" />
+      </div>
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

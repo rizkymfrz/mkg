@@ -7,8 +7,12 @@ import { Quote } from "lucide-react";
 
 export function Testimonials() {
   return (
-    <section id="testimoni" className="bg-white py-20 lg:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="testimoni" className="relative overflow-hidden bg-white py-20 lg:py-28">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+         <div className="absolute top-1/4 right-0 w-[500px] h-[500px] rounded-full bg-brand-50/60 blur-3xl -translate-y-1/2 translate-x-1/3" />
+         <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] rounded-full bg-brand-50/60 blur-3xl translate-y-1/2 -translate-x-1/3" />
+      </div>
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

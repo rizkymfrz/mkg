@@ -22,28 +22,15 @@ export function Hero() {
       </div>
       <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-brand-600/20 blur-3xl" />
       <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-accent-gold/10 blur-3xl" />
+      <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none opacity-[0.1]">
+        <img
+          src="/logo.png"
+          alt="Watermark PT Mitra Kerja Gemilang"
+          className="w-[90vw] max-w-2xl object-contain drop-shadow-2xl"
+        />
+      </div>
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mb-8 flex justify-center"
-          >
-            <div className="inline-flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-3 pr-6 sm:p-4 sm:pr-8 backdrop-blur-md transition-transform hover:scale-105">
-              <img
-                src="/logo.png"
-                alt="Logo PT Mitra Kerja Gemilang"
-                className="h-12 sm:h-16 w-auto object-contain"
-              />
-              <div className="h-10 sm:h-12 w-px bg-white/20" />
-              <span className="text-lg sm:text-xl font-bold tracking-wide text-white">
-                MITRA KERJA
-                <br />
-                GEMILANG
-              </span>
-            </div>
-          </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
