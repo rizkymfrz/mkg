@@ -49,7 +49,7 @@ export function Footer() {
               />
               <span className="font-bold text-lg">Mitra Kerja Gemilang</span>
             </div>
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
+            <p className="text-justify mt-4 max-w-sm text-sm leading-relaxed text-white/60">
               Solusi penyedia tenaga kerja profesional yang terpercaya untuk
               mendukung operasional dan pertumbuhan bisnis perusahaan Anda di
               berbagai sektor industri.
