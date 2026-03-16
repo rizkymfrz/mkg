@@ -10,7 +10,7 @@ export function Gallery() {
       id="galeri"
       className="relative overflow-hidden bg-slate-50 py-20 lg:py-28"
     >
-      <div className="absolute inset-0 pointer-events-none opacity-[0.05]">
+      <div className="absolute inset-0 pointer-events-none opacity-[0.2] text-slate-400">
         <svg
           className="absolute inset-0 h-full w-full"
           xmlns="http://www.w3.org/2000/svg"

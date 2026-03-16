@@ -9,8 +9,8 @@ export function Testimonials() {
   return (
     <section id="testimoni" className="relative overflow-hidden bg-white py-20 lg:py-28">
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-         <div className="absolute top-1/4 right-0 w-[500px] h-[500px] rounded-full bg-brand-50/60 blur-3xl -translate-y-1/2 translate-x-1/3" />
-         <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] rounded-full bg-brand-50/60 blur-3xl translate-y-1/2 -translate-x-1/3" />
+         <div className="absolute top-1/4 right-0 w-[600px] h-[600px] rounded-full bg-brand-100/70 blur-[100px] -translate-y-1/2 translate-x-1/4" />
+         <div className="absolute bottom-1/4 left-0 w-[600px] h-[600px] rounded-full bg-brand-100/70 blur-[100px] translate-y-1/2 -translate-x-1/4" />
       </div>
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div

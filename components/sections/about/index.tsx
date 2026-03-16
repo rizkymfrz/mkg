@@ -14,8 +14,8 @@ export function About() {
   return (
     <section id="tentang" className="relative overflow-hidden bg-white py-20 lg:py-28">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-brand-50 blur-3xl opacity-60" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-brand-50 blur-3xl opacity-60" />
+        <div className="absolute -top-20 -right-20 w-[600px] h-[600px] rounded-full bg-brand-100/80 blur-[100px]" />
+        <div className="absolute -bottom-20 -left-20 w-[600px] h-[600px] rounded-full bg-accent-gold/20 blur-[100px]" />
       </div>
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">

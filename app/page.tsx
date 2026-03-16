@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/sections/navbar";
+import { Separator } from "@/components/ui/separator";
 import { Hero } from "@/components/sections/hero";
 import { TrustedBy } from "@/components/sections/trusted-by";
 import { About } from "@/components/sections/about";
@@ -20,16 +21,27 @@ export default function Home() {
       <main>
         <Hero />
         <TrustedBy />
+        <Separator />
         <About />
+        <Separator />
         <Services />
+        <Separator />
         <WhyUs />
+        <Separator />
         <Industries />
+        <Separator />
         <Process />
+        <Separator />
         <Stats />
+        <Separator />
         <Gallery />
+        <Separator />
         <Testimonials />
+        <Separator />
         <CTA />
+        <Separator />
         <Contact />
+        <Separator />
         <Location />
       </main>
       <Footer />

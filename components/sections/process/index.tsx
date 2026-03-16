@@ -41,10 +41,10 @@ export function Process() {
       className="relative overflow-hidden bg-white py-20 lg:py-28"
     >
       <div
-        className="absolute inset-0 opacity-[0.05] pointer-events-none"
+        className="absolute inset-0 opacity-[0.1] pointer-events-none"
         style={{
           backgroundImage:
-            "linear-gradient(to right, #808080 1px, transparent 1px), linear-gradient(to bottom, #808080 1px, transparent 1px)",
+            "linear-gradient(to right, #64748b 1px, transparent 1px), linear-gradient(to bottom, #64748b 1px, transparent 1px)",
           backgroundSize: "64px 64px",
         }}
       />

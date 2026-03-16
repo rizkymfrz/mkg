@@ -5,9 +5,12 @@ import { advantages } from "@/data/why-us";
 
 export function WhyUs() {
   return (
-    <section id="keunggulan" className="relative overflow-hidden bg-white py-20 lg:py-28">
+    <section
+      id="keunggulan"
+      className="relative overflow-hidden bg-white py-20 lg:py-28"
+    >
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-brand-50/50 blur-[120px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] rounded-full bg-brand-100/70 blur-[120px]" />
       </div>
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -36,7 +39,7 @@ export function WhyUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="group relative rounded-2xl border border-border/50 bg-linear-to-b from-white to-muted/20 p-6 transition-all duration-300 hover:border-brand-200 "
+              className="group relative rounded-2xl border border-border/50 bg-white p-6 transition-all duration-300 hover:border-brand-200 "
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-600 transition-colors duration-300 group-hover:bg-brand-600 group-hover:text-white">
                 <item.icon className="h-6 w-6" />

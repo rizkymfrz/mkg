@@ -36,7 +36,7 @@ export function Location() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-12 overflow-hidden rounded-2xl border border-border/50 bg-muted/30 shadow-xs"
+          className="mt-12 overflow-hidden rounded-2xl border border-border/50 bg-muted/30"
         >
           <div className="aspect-video w-full sm:aspect-21/9 lg:h-[500px]">
             <iframe
